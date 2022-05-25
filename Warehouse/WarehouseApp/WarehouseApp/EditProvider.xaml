@@ -1,0 +1,21 @@
+﻿<Window x:Class="WarehouseApp.EditProvider"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarehouseApp"
+        mc:Ignorable="d"
+        Title="EditProvider" Height="300" Width="300">
+    <StackPanel HorizontalAlignment="Stretch" Margin="5" MaxWidth="200" VerticalAlignment="Center">
+        <GroupBox Header="Наименование">
+            <TextBox Name="txtName"/>
+        </GroupBox>
+        <GroupBox Header="Адрес">
+            <TextBox Name="txtAdress"/>
+        </GroupBox>
+        <GroupBox Header="Контакты">
+            <TextBox Name="txtContact"/>
+        </GroupBox>
+        <Button Margin="5" Click="ButtonSave_Click" MaxWidth="100">Сохранить</Button>
+    </StackPanel>
+</Window>

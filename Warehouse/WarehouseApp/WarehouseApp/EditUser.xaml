@@ -1,0 +1,24 @@
+﻿<Window x:Class="WarehouseApp.EditUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarehouseApp"
+        mc:Ignorable="d"
+        Title="EditUser" Height="300" Width="300">
+    <StackPanel HorizontalAlignment="Stretch" Margin="5" MaxWidth="200" VerticalAlignment="Center">
+        <GroupBox Header="Логин">
+            <TextBox Name="txtLog"/>
+        </GroupBox>
+        <GroupBox Header="Пароль">
+            <TextBox Name="txtPass"/>
+        </GroupBox>
+        <StackPanel Orientation="Horizontal">
+            <GroupBox Header="Должность" Margin="0,0,5,5" MinWidth="175">
+                <ComboBox Name="comboPosit" DisplayMemberPath="name"/>
+            </GroupBox>
+            <Button  Width="15" Height="20" Grid.Column="1" Click="BtnPosit_Click" Name="BtnPosit">...</Button>
+        </StackPanel>
+        <Button Margin="5" MaxWidth="100" Click="ButtonSave_Click">Сохранить</Button>
+    </StackPanel>
+</Window>

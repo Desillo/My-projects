@@ -1,0 +1,30 @@
+﻿<Window x:Class="WarehouseApp.WriteOffWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarehouseApp"
+        mc:Ignorable="d"
+        Title="WriteOffWindow" Height="310" Width="550">
+    <StackPanel>
+        <DataGrid Name="dataGrid1" Margin="5" AutoGenerateColumns="False"  CanUserAddRows="False" MinHeight="230"
+                  Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя" Binding="{Binding name}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding type}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Ед. Измерения" Binding="{Binding unit}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding price}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Поставщик" Binding="{Binding provider}" IsReadOnly="True"/> 
+                <DataGridTemplateColumn Header="Дата Поставки">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding registration}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Кол-во" Binding="{Binding amount}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Center" Click="Button_Click" Name="btnsend" Height="30">Отправить</Button>
+    </StackPanel>
+</Window>
