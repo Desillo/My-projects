@@ -1,0 +1,5 @@
+D:\Visual Studio 2015\Projects\1141 Диплом\WarehouseDLL\WarehouseDLL\bin\Debug\WarehouseDLL.dll
+D:\Visual Studio 2015\Projects\1141 Диплом\WarehouseDLL\WarehouseDLL\bin\Debug\WarehouseDLL.pdb
+D:\Visual Studio 2015\Projects\1141 Диплом\WarehouseDLL\WarehouseDLL\obj\Debug\WarehouseDLL.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2015\Projects\1141 Диплом\WarehouseDLL\WarehouseDLL\obj\Debug\WarehouseDLL.dll
+D:\Visual Studio 2015\Projects\1141 Диплом\WarehouseDLL\WarehouseDLL\obj\Debug\WarehouseDLL.pdb
