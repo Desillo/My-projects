@@ -1,2 +1,2 @@
 # Warehouse
-Warehouse - приложение учёта товаров на складе
+Warehouse - inventory tracking app
